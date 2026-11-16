@@ -1,117 +1,180 @@
 # ❤️ Heart Disease Prediction Using Machine Learning
 
-A Machine Learning project that predicts the likelihood of heart disease
-using patient health data. The project compares multiple supervised
-machine learning algorithms and identifies the best-performing model for
-accurate prediction.
-
-------------------------------------------------------------------------
+A machine learning project that predicts the likelihood of heart disease using patient health data. This project explores and compares multiple supervised learning algorithms to identify the best-performing classification model.
 
 ## 📌 Project Overview
 
-Heart disease is one of the leading causes of death worldwide. Early
-detection can help doctors make better treatment decisions and improve
-patient outcomes.
+Heart disease is a major global health concern. Early risk prediction can support further medical assessment and help healthcare professionals make informed decisions.
 
-This project uses Machine Learning classification algorithms to analyze
-medical attributes such as age, chest pain type, blood pressure,
-cholesterol level, maximum heart rate, ECG results, and other health
-indicators to predict whether a patient is likely to have heart disease.
+This project applies machine learning classification algorithms to patient health attributes, including age, chest pain type, resting blood pressure, cholesterol, maximum heart rate, and other clinical indicators.
 
-## 🎯 Objectives
+The goal is to compare different models and identify which performs best on the dataset.
 
--   Predict heart disease using Machine Learning.
--   Compare different classification algorithms.
--   Evaluate model performance using accuracy.
--   Identify the best-performing model.
+## 🎯 Project Objectives
+
+- Predict the likelihood of heart disease using machine learning.
+- Explore and preprocess patient health data.
+- Perform exploratory data analysis (EDA).
+- Train and compare multiple classification algorithms.
+- Evaluate model performance using accuracy.
+- Identify the best-performing model.
 
 ## 📂 Dataset
 
-**Target** - 0 → No Heart Disease - 1 → Heart Disease
+The dataset contains patient health information and a target variable indicating the presence or absence of heart disease.
 
-**Features** - Age - Sex - Chest Pain Type - Resting Blood Pressure -
-Cholesterol - Fasting Blood Sugar - Resting ECG - Maximum Heart Rate -
-Exercise Induced Angina - ST Depression - Slope - Number of Major
-Vessels - Thalassemia
+**Target Variable**
 
-## 🛠️ Technologies Used
+| Value | Meaning |
+|---|---|
+| `0` | No Heart Disease |
+| `1` | Heart Disease |
 
--   Python
--   Jupyter Notebook
--   NumPy
--   Pandas
--   Matplotlib
--   Seaborn
--   Scikit-learn
+**Dataset Features**
+
+| Feature | Description |
+|---|---|
+| Age | Patient's age |
+| Sex | Patient's sex |
+| Chest Pain Type | Type of chest pain |
+| Resting Blood Pressure | Blood pressure at rest |
+| Cholesterol | Serum cholesterol level |
+| Fasting Blood Sugar | Fasting blood sugar indicator |
+| Resting ECG | Resting electrocardiographic results |
+| Maximum Heart Rate | Maximum heart rate achieved |
+| Exercise Induced Angina | Angina caused by exercise |
+| ST Depression | ST depression induced by exercise |
+| Slope | Slope of the peak exercise ST segment |
+| Number of Major Vessels | Number of major vessels |
+| Thalassemia | Thalassemia test result |
+
+**Dataset file:** `heart.csv`
+
+## 🛠️ Technologies & Libraries
+
+- **Python** – Core programming language
+- **Jupyter Notebook** – Model development and experimentation
+- **NumPy** – Numerical computations
+- **Pandas** – Data manipulation and analysis
+- **Matplotlib** – Data visualization
+- **Seaborn** – Statistical visualization
+- **Scikit-learn** – Machine learning algorithms and evaluation
 
 ## 🤖 Machine Learning Algorithms
 
--   Logistic Regression
--   Naive Bayes
--   Decision Tree
--   Random Forest
--   Support Vector Machine (SVM)
--   K-Nearest Neighbors (KNN)
+The following supervised classification algorithms are included:
 
-## ⚙️ Workflow
+1. Logistic Regression
+2. Naive Bayes
+3. Decision Tree
+4. Random Forest
+5. Support Vector Machine (SVM)
+6. K-Nearest Neighbors (KNN)
 
-1.  Data Collection
-2.  Data Preprocessing
-3.  Exploratory Data Analysis
-4.  Feature Selection
-5.  Train-Test Split
-6.  Model Training
-7.  Model Evaluation
-8.  Prediction
+## ⚙️ Project Workflow
+
+```text
+Dataset Collection
+       |
+       v
+Data Preprocessing
+       |
+       v
+Exploratory Data Analysis
+       |
+       v
+Feature Selection
+       |
+       v
+Train-Test Split
+       |
+       v
+Model Training
+       |
+       v
+Model Evaluation
+       |
+       v
+Heart Disease Prediction
+```
 
 ## 📊 Model Performance
 
-  Algorithm             Accuracy
-  --------------------- ----------
-  Logistic Regression   85%
-  Naive Bayes           85%
-  Decision Tree         81%
-  Random Forest         90%+
+The following accuracy results are reported in this project:
 
-**Best Model:** Random Forest
+| Algorithm | Accuracy |
+|---|---:|
+| Logistic Regression | 85% |
+| Naive Bayes | 85% |
+| Decision Tree | 81% |
+| Random Forest | 90%+ |
+
+**Best-performing model:** Random Forest
+
+*Note: The results shown are the reported project results. Actual performance may vary depending on the dataset split and evaluation setup.*
 
 ## 📁 Project Structure
 
-``` text
-Heart-Disease-Prediction/
+```text
+ML-Heart-Disease-Prediction/
+│
 ├── heart.csv
 ├── Heart Disease Prediction Using Machine Learning Model.ipynb
 ├── README.md
 └── requirements.txt
 ```
 
-## 🚀 Installation
+## 🚀 Getting Started
 
-``` bash
-git clone https://github.com/your-username/ML-Heart-Disease-Prediction.git
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/anasmurtaza/ML-Heart-Disease-Prediction.git
+```
+
+### 2. Navigate to the Project Directory
+
+```bash
 cd ML-Heart-Disease-Prediction
+```
+
+### 3. Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
+
+### 4. Launch Jupyter Notebook
+
+```bash
 jupyter notebook
 ```
 
-## 📈 Future Improvements
+Open the notebook:
 
--   Build a Streamlit/Flask web app
--   Hyperparameter tuning
--   Feature engineering
--   Cloud deployment
+`Heart Disease Prediction Using Machine Learning Model.ipynb`
+
+Run the notebook cells to explore the dataset, train the models, and review the results.
+
+## 🔮 Future Improvements
+
+- Develop an interactive web application using Streamlit or Flask.
+- Apply hyperparameter tuning to improve model performance.
+- Perform additional feature engineering.
+- Add more evaluation metrics, such as precision, recall, F1-score, and ROC-AUC.
+- Deploy the application to a cloud platform.
 
 ## 👨‍💻 Author
 
 **Muhammad Anas Murtaza**
 
-GitHub: https://github.com/anasmurtaza
+- GitHub: [anasmurtaza](https://github.com/anasmurtaza)
+- LinkedIn: [Muhammad Anas Murtaza](https://www.linkedin.com/in/m-anas-murtaza/)
 
-Linkedin: https://www.linkedin.com/in/m-anas-murtaza
+**Interests:** Machine Learning | Data Science | Artificial Intelligence
 
+---
 
-Machine Learning \| Data Science \| AI Enthusiast
+⭐ If you find this project useful, consider giving it a star!
 
-------------------------------------------------------------------------
-
-⭐ If you like this project, give it a star on GitHub.
+**Disclaimer:** This project is developed for educational and research purposes only. Its predictions are not a substitute for professional medical advice, diagnosis, or treatment.
